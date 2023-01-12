@@ -1,10 +1,10 @@
 plugins {
     id("io.papermc.paperweight.userdev") version "1.4.0"
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.8.0"
 }
 
 group = "com.github.curur"
-version = "1.0-SNAPSHOT"
+version = "0.0.1"
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
