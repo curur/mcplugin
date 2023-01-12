@@ -2,4 +2,4 @@ name: plugin
 main: com.github.curur.plugin.plugin.Main
 version: 0.0.1
 libraries:
-  - org.jetbrains.kotlin:kotlin-stdlib:1.7.21
+  - org.jetbrains.kotlin:kotlin-stdlib:1.8.0
