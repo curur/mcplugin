@@ -1,2 +1,2 @@
-cd D:\server\plugins server
+cd D:\server\dve server
 start.bat
