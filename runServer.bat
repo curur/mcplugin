@@ -1,2 +1,2 @@
-cd D:\server\dve server
+cd D:\server\dev server
 start.bat
