@@ -24,8 +24,9 @@ tasks {
             copy {
                 val jarName = "${rootProject.name}-$version.jar"
                 from("build\\libs\\$jarName")
-                into("D:\\server\\[서버이름]\\plugins")
+                into("D:\\server\\dev server\\plugins")
             }
+            delete("D:\\server\\dev server\\plugins\\update\\RELOAD")
         }
     }
     assemble {
