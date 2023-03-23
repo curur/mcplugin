@@ -1,2 +1,2 @@
-cd D:\server\plugins server
+cd D:\server\dev server
 start.bat
