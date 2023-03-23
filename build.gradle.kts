@@ -1,5 +1,4 @@
 plugins {
-    id("io.papermc.paperweight.userdev") version "1.4.0"
     kotlin("jvm") version "1.8.0"
 }
 
@@ -12,10 +11,11 @@ java {
 
 repositories {
     mavenCentral()
+    maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
-    paperDevBundle("1.19.3-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
 }
 
 tasks {
@@ -24,11 +24,9 @@ tasks {
             copy {
                 val jarName = "${rootProject.name}-$version.jar"
                 from("build\\libs\\$jarName")
-                into("D:\\server\\[서버이름]\\plugins")
+                into("D:\\server\\dev server\\plugins")
             }
+            delete("D:\\server\\dev server\\plugins\\update\\RELOAD")
         }
-    }
-    assemble {
-        dependsOn(reobfJar)
     }
 }
