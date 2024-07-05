@@ -13,7 +13,7 @@ version = "0.0.1"
 val mcversion = properties["mcversion"]
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
 
 repositories {
