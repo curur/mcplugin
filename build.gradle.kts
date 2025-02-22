@@ -5,7 +5,7 @@ import java.nio.file.Files
 import java.nio.file.Path
 
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "2.1.0"
 }
 
 group = "com.github.curur"
